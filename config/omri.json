@@ -1,5 +1,11 @@
 [
   {
-    "module": "enumNetwork"
+    "module": "dirlister"
+  },
+  {
+    "module": "openSession"
+  },
+  {
+    "module": "enviroment"
   }
 ]

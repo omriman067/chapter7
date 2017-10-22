@@ -1,10 +1,4 @@
 [
-//  {
-//    "module": "dirlister"
-//  },
-//  {
-//    "module": "enviroment"
-//  },
   {
     "module": "open-session"
   }

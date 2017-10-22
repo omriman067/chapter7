@@ -6,6 +6,6 @@
     "module": "enviroment"
   },
   {
-    "module": "open-session"
+    "module": "openSession"
   }
 ]

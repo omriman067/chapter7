@@ -3,9 +3,9 @@
     "module": "dirlister"
   },
   {
-    "module": "enviroment"
+    "module": "openSession"
   },
   {
-    "module": "openSession"
+    "module": "enviroment"
   }
 ]
